@@ -13,6 +13,7 @@ openssl = "0.10.24"
 quick-error = "1.2.2"
 rand = "0.7.0"
 ring = { path = "/Users/amanusk/rust/ring" }
+rcgen = { path = "/Users/amanusk/rust/rcgen" }
 serde = "1.0.99"
 serde_derive = "1.0.99"
 serde_json = "1.0.40"

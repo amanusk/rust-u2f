@@ -5,6 +5,7 @@ extern crate base64;
 extern crate byteorder;
 extern crate futures;
 extern crate hex;
+extern crate rcgen;
 #[macro_use]
 extern crate lazy_static;
 extern crate openssl;
@@ -1005,7 +1006,7 @@ AwEHoUQDQgAEryDZdIOGjRKLLyG6Mkc4oSVUDBndagZDDbdwLcUdNLzFlHx/yqYl
         .unwrap();
 
         // Sign the message "hello, world".
-        const MESSAGE: &[u8] = b"hello, world";
+        const MESSAGE: &[u8] = b"hello, world, this is a much longer message that I want to see if this is also working for longer messages";
         let sig = key_pair.sign(&rng, MESSAGE);
 
         // Normally an application would extract the bytes of the signature and
