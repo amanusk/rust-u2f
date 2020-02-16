@@ -220,6 +220,7 @@ impl U2F {
         key_handle: KeyHandle,
     ) -> Box<dyn Future<Item = Authentication, Error = AuthenticateError>> {
         debug!(self.0.logger, "authenticate");
+        debug!(self.0.logger, "############## DOING AUTHENTICATE ###################");
         Self::_authenticate_step1(self.0.clone(), application, challenge, key_handle)
     }
 
@@ -353,6 +354,7 @@ impl U2F {
         challenge: Challenge,
     ) -> Box<dyn Future<Item = Registration, Error = RegisterError>> {
         debug!(self.0.logger, "register");
+        debug!(self.0.logger, "############## DOING REGISTER ###################");
         Self::_register_step1(self.0.clone(), application, challenge)
     }
 
