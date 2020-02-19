@@ -5,7 +5,6 @@ extern crate base64;
 extern crate byteorder;
 extern crate futures;
 extern crate hex;
-extern crate rcgen;
 #[macro_use]
 extern crate lazy_static;
 extern crate openssl;
